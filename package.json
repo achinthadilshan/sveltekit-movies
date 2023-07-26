@@ -10,6 +10,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@iconify-json/icon-park-solid": "^1.1.9",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"autoprefixer": "^10.4.14",
@@ -17,10 +18,12 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"postcss": "^8.4.27",
-		"prettier": "^2.8.0",
+		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
+		"prettier-plugin-tailwindcss": "^0.4.1",
 		"svelte": "^4.0.5",
 		"tailwindcss": "^3.3.3",
+		"unplugin-icons": "^0.16.5",
 		"vite": "^4.4.2"
 	},
 	"type": "module"
