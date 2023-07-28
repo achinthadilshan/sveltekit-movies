@@ -1,9 +1,9 @@
 <script>
 	import '../app.css';
+	import Header from '../components/Header.svelte';
 	import NavBar from '../components/NavBar.svelte';
-	import Icon from '~icons/icon-park-solid/check-one';
 </script>
 
 <NavBar />
-<Icon class="text-xl" />
+<Header/>
 <slot />
