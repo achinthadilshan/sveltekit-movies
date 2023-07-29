@@ -11,6 +11,7 @@
 	},
 	"devDependencies": {
 		"@iconify-json/icon-park-solid": "^1.1.9",
+		"@iconify-json/ri": "^1.1.10",
 		"@iconify-json/subway": "^1.1.6",
 		"@iconify-json/tabler": "^1.1.85",
 		"@sveltejs/adapter-auto": "^2.0.0",
