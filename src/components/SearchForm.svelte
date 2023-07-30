@@ -3,9 +3,9 @@
 	import SearchResultsList from './SearchResultsList.svelte';
 </script>
 
-<form action="" class="w-full max-w-2xl">
+<form action="" class="relative w-full max-w-2xl">
 	<div
-		class="input-wrapper mb-4 flex w-full items-center overflow-hidden rounded-lg border-2 border-slate-300 bg-transparent text-slate-200"
+		class="input-wrapper flex w-full items-center overflow-hidden rounded-lg border-2 border-slate-300 bg-transparent text-slate-200"
 	>
 		<input
 			type="text"
