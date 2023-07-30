@@ -1,22 +1,39 @@
 <script>
-	import Icon from '~icons/tabler/movie';
+	import Logo from '~icons/tabler/movie';
+	import Hamburg from '~icons/ci/hamburger-md';
+
+	let showMenu = false;
 </script>
 
-<nav class=" bg-slate-900 py-2 fixed top-0 w-full">
+<nav class=" fixed top-0 w-full bg-slate-900 py-2">
 	<div class="container mx-auto flex items-center justify-between">
+		<!-- logo section -->
 		<a href="/" class="flex items-center">
-			<Icon class="text-4xl text-orange-500" />
+			<Logo class="text-4xl text-orange-500" />
 			<span class="ml-2 text-lg font-semibold text-white">Movie</span>
 			<span class="block rounded bg-orange-500 p-1 text-lg font-semibold leading-none text-white"
 				>Hub</span
 			>
 		</a>
-		<ul class="flex items-center gap-4">
+
+		<!-- mobile menu button -->
+		<button
+			on:click={() => (showMenu = !showMenu)}
+			class="absolute right-4 focus:bg-transparent md:hidden"
+		>
+			<Hamburg class="text-4xl text-white" />
+		</button>
+
+		<!-- menu -->
+		<ul
+			class="absolute right-4 top-16 flex flex-col space-y-2 rounded-lg bg-slate-900 p-4 md:relative md:right-0 md:top-0 md:flex-row md:items-center md:space-x-4 md:space-y-0 {!showMenu &&
+				'hidden'}"
+		>
 			<li>
-				<a href="/" class=" font-semibold text-white hover:text-orange-400">Home</a>
+				<a href="/" class="font-semibold text-white hover:text-orange-400">Home</a>
 			</li>
 			<li>
-				<a href="/" class=" font-semibold text-white hover:text-orange-400">About</a>
+				<a href="/" class="font-semibold text-white hover:text-orange-400">About</a>
 			</li>
 		</ul>
 	</div>

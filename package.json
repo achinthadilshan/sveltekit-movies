@@ -10,6 +10,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@iconify-json/ci": "^1.1.9",
 		"@iconify-json/icon-park-solid": "^1.1.9",
 		"@iconify-json/ri": "^1.1.10",
 		"@iconify-json/subway": "^1.1.6",

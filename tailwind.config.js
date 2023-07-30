@@ -3,8 +3,11 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		container: {
-			padding: '2rem',
-		  },
+			padding: '1rem'
+		},
+		fontFamily: {
+			sans: ['Open Sans', 'sans-serif']
+		},
 		extend: {}
 	},
 	plugins: []
