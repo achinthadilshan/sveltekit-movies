@@ -1,8 +1,28 @@
 <script>
+	import { onMount } from 'svelte';
 	import Logo from '~icons/tabler/movie';
 	import Hamburg from '~icons/ci/hamburger-md';
 
 	let showMenu = false;
+
+	onMount(() => {
+		let innerWidth = window.innerWidth;
+
+		function onResize() {
+			innerWidth = window.innerWidth;
+
+			if (innerWidth < 768) {
+				showMenu = false;
+			} else {
+				showMenu = true;
+			}
+		}
+
+		onResize();
+
+		window.addEventListener('resize', onResize);
+		return () => window.removeEventListener('resize', onResize);
+	});
 </script>
 
 <nav class=" fixed top-0 w-full bg-slate-900 py-2">
